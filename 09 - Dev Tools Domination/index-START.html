@@ -18,28 +18,50 @@
     }
 
     // Regular
+    console.log('hello');
 
     // Interpolated
+    console.log('hello %s', 'world');
 
     // Styled
+    console.log('%c hello big word', 'font-size: 20px;');
 
     // warning!
+    console.warn('hello warning');
 
     // Error :|
+    console.error('hello error');
 
     // Info
+    console.info('hello info');
 
     // Testing
+    console.assert(1===1 ,'hello assert failed');
 
     // clearing
+    // console.clear();
 
     // Viewing DOM Elements
+    console.dir(document.querySelector('p'));
 
     // Grouping together
+    dogs.forEach(dog => {
+      console.groupCollapsed(`${dog.name}`);
+      console.log(`This is ${dog.name}`);
+      console.log(`${dog.name} is ${dog.age} years old`);
+      console.groupEnd(`${dog.name}`);
+    });
 
     // counting
+    console.count('Tom');
+    console.count('Jerry');
+    console.count('Jerry');
+    console.count('Tom');
+    console.count('Jerry');
 
     // timing
+    console.time('test');
+    console.timeEnd('test');
 
   </script>
 </body>
